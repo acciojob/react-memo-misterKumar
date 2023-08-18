@@ -32,11 +32,11 @@ const MemoComponent = () => {
   };
 
   return (
-    <div>
+    <div id='main'>
       <h1>React.useMemo</h1>
 
       <h2>My todos</h2>
-      <button onClick={handleAddTodo}>Add Todo</button>
+      <button id='add-todo-btn' onClick={handleAddTodo}>Add Todo</button>
       <div>
         
         <ul>
@@ -48,7 +48,7 @@ const MemoComponent = () => {
       
      <div className='cc'>
         <p >Count:{count}</p>
-        <button  onClick={handleIncrement}><FaPlus/></button>
+        <button id='incr-cnt' onClick={handleIncrement}><FaPlus/></button>
      </div>
      <h2>Expensive Calculation</h2>
      <p>{expense}</p>
@@ -56,6 +56,7 @@ const MemoComponent = () => {
         <h2>React.memo</h2>
         <input
           type="text"
+          id="skill-input"
           placeholder="Enter text (min 6 characters)"
           value={memoText}
           onChange={handleMemoTextChange}

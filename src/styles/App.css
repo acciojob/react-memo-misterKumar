@@ -1,3 +1,7 @@
+#main{
+    padding: 10px;
+    margin: 10px;
+}
 h1 {
     color: #27aedb;
     text-align: center;
@@ -15,4 +19,13 @@ button{
    gap: 15px;
    height: 30px;
     flex-direction: row;
+}
+#add-todo-btn{
+    padding: 5px;
+}
+#incr-cnt{
+    padding: 5px;
+}
+#skill-input{
+    padding: 5px;
 }
