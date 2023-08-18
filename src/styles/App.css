@@ -10,3 +10,9 @@ button{
     justify-content: center;
     align-items: center;
 }
+.cc{
+    display: flex;
+   gap: 15px;
+   height: 30px;
+    flex-direction: row;
+}
