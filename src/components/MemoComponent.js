@@ -3,7 +3,7 @@ import { FaPlus } from "react-icons/fa";
 import "../styles/App.css"
 const MemoComponent = () => {
   const [todos, setTodos] = useState([]);
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
   const [memoText, setMemoText] = useState('');
   const [memoItems, setMemoItems] = useState([]);
   const [expense, setExpense]=useState(0);
@@ -15,7 +15,7 @@ const MemoComponent = () => {
   
   const handleIncrement = () => {
     setCount(count+1);
-     /* console.log(count) */
+     console.log(count)
     setExpense(expense+count);
     /* console.log(expense) */
   };
@@ -39,7 +39,7 @@ const MemoComponent = () => {
       <button id='add-todo-btn' onClick={handleAddTodo}>Add Todo</button>
       <div>
         
-        <ul>
+        <ul id='todo-list'>
           {todos.map((todo, index) => (
             <li key={index}>{todo}</li>
           ))}
@@ -61,7 +61,7 @@ const MemoComponent = () => {
           value={memoText}
           onChange={handleMemoTextChange}
         />
-        <button onClick={handleAddMemoItem}>Add Skill</button>
+        <button id='skill-btn' onClick={handleAddMemoItem}>Add Skill</button>
       </div>
       
       <div>
