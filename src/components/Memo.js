@@ -18,7 +18,7 @@ const Memo = () =>{
  
     return(
        <div>
-           <h3>Memo</h3>
+           <h3>React.Memo</h3>
            <input id="skill-input" onChange={e=>setText(e.target.value)} value={text} />
            <button id="skill-btn" onClick={submitMemo}>Submit</button>
            <ul>
